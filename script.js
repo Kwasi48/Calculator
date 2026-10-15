@@ -13,3 +13,23 @@ function multiply(a, b){
 function divide(a, b){
     return Math.floor(a / b);
 }
+
+let leftOperand;
+let rightOperand;
+let operator;
+
+//creating the operate function
+function operate(leftOperand, operator, rightOperand){
+    switch (operator) {
+        case '+':
+            return add(leftOperand, rightOperand);
+            break;
+        case'*':
+            return multiply(leftOperand, rightOperand);
+            break;
+        case'/':
+            return divide(leftOperand, rightOperand);
+        case '-':
+            return subtract(leftOperand, rightOperand);
+    }
+}
