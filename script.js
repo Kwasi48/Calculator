@@ -34,7 +34,7 @@ function operate(leftOperand, operator, rightOperand){
     }
 }
 
-results = [];
+
 
 const display = document.querySelector('.text');
 const nums = document.querySelectorAll('.nums');
@@ -47,8 +47,7 @@ nums.forEach(but => {
     but.addEventListener('click', () =>{
         let number = but.value;
         //console.log(number);
-        results.push(number)
-        console.log(results)
+        
         ins.textContent += String(number);
     })
 })
