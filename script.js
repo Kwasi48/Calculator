@@ -42,23 +42,9 @@ const btn_cl = document.querySelector('.clear');
 const ins = document.querySelector('.ins');
 const ops = document.querySelectorAll('.op');
 
-nums.forEach(but => {
-    but.addEventListener('click', () =>{
-        let number = but.value;
-        //console.log(number);
-        
-        ins.textContent += String(number);
-    })
-})
+ 
 
-ops.forEach(but => {
-    but.addEventListener('click', () =>{
-        let opp = but.value;
-        //console.log(number);
-        ins.textContent = ''
-        opp = operate ;
-    })
-})
+ 
 
 btn_cl.addEventListener('click', ()=>{
     ins.textContent = '';
