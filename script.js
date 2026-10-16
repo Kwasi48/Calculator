@@ -34,13 +34,26 @@ function operate(leftOperand, operator, rightOperand){
     }
 }
 
+results = [];
+
 const display = document.querySelector('.text');
 const nums = document.querySelectorAll('.nums');
 const btn_cl = document.querySelector('.clear');
 const ins = document.querySelector('.ins');
 const outs = document.querySelector('.out');
+const ops = document.querySelectorAll('.op');
 
 nums.forEach(but => {
+    but.addEventListener('click', () =>{
+        let number = but.value;
+        //console.log(number);
+        results.push(number)
+        console.log(results)
+        ins.textContent += String(number);
+    })
+})
+
+ops.forEach(but => {
     but.addEventListener('click', () =>{
         let number = but.value;
         //console.log(number);
@@ -51,6 +64,7 @@ nums.forEach(but => {
 btn_cl.addEventListener('click', ()=>{
     ins.textContent = '';
 })
+
 
 
 
