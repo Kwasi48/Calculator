@@ -33,5 +33,6 @@ button{
     border: 1px solid black;
     border-radius: 8px;
     fill: 1;
+    margin: 8px;
 }
 
