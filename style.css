@@ -50,6 +50,8 @@ button{
     color:black;
     margin: 4px;
     overflow: hidden;
+    align-items: flex-end;
+    justify-content: flex-end;
 }
 
 

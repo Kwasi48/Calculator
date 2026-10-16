@@ -40,7 +40,6 @@ const display = document.querySelector('.text');
 const nums = document.querySelectorAll('.nums');
 const btn_cl = document.querySelector('.clear');
 const ins = document.querySelector('.ins');
- 
 const ops = document.querySelectorAll('.op');
 
 nums.forEach(but => {
@@ -54,9 +53,10 @@ nums.forEach(but => {
 
 ops.forEach(but => {
     but.addEventListener('click', () =>{
-        let number = but.value;
+        let opp = but.value;
         //console.log(number);
-        ins.textContent += String(number)
+        ins.textContent = ''
+        opp = operate ;
     })
 })
 
