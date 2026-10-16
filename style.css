@@ -34,7 +34,7 @@ button{
     border-radius: 8px;
     fill: 1;
     margin: 8px;
-    align-items: stretch;
+    align-items:flex-end;
     flex-direction: column;
      
 
