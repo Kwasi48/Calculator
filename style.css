@@ -9,7 +9,7 @@ body{
     display: flex;
     flex-direction: row;
     align-content: space-around;
-    gap: 4px;
+    gap: 6px;
     padding: 6px;
 }
 
@@ -19,15 +19,19 @@ button{
 
 .main{
     display: flex;
-    border: 1 px solid black;
-    height: 100px;
-    width: 50px;
     background-color: aliceblue;
+    flex-direction: column;
+    gap: 36px;
+    margin: 36px;
+    border-color: black;
 }
 
 .text {
-    width: 20vh;
-    height: 10vh;
+    height: 100px;
     color: black;
+    background-color: aqua;
+    border: 1px solid black;
+    border-radius: 8px;
+    fill: 1;
 }
 
