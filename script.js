@@ -81,11 +81,12 @@ ops.forEach((opp) => {
     opp.addEventListener('click', ()=> {
         isSecond = true
         sign = opp.value;
-        // if (leftOperand !== undefined && rightOperand !== undefined && operator !== undefined){
-        //     res = operate(parseInt(leftOperand), operator, parseInt(rightOperand))
-        //     leftOperand = res;
-        //     ins.textContent = leftOperand
-        // }
+        if (leftOperand !== undefined && rightOperand !== undefined && operator !== undefined){
+            res = operate(parseInt(leftOperand), operator, parseInt(rightOperand))
+            leftOperand = res;
+            ins.textContent = leftOperand
+            rightOperand = ''
+        }
         operator = sign;
         console.log(operator)
         
