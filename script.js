@@ -41,8 +41,10 @@ const nums = document.querySelectorAll('.nums');
 const btn_cl = document.querySelector('.clear');
 const ins = document.querySelector('.ins');
 const ops = document.querySelectorAll('.op');
+const result = document.querySelector('.result')
 
 isSecond = false;
+ins.textContent = 0
 
 
 
@@ -50,7 +52,7 @@ isSecond = false;
 nums.forEach((button) => {
     button.addEventListener('click', () => {
         val = button.value;
-        if ( leftOperand === '' && isSecond == false){
+        if (isSecond == false){
             leftOperand += val;
             ins.textContent = leftOperand
             console.log(leftOperand)
@@ -68,21 +70,43 @@ nums.forEach((button) => {
 })
 
 btn_cl.addEventListener('click', ()=>{
-    ins.textContent = '';
-    leftOperand = ''
+    ins.textContent = 0;
+    leftOperand = '' 
     rightOperand = ''
     operator =  ''
+    isSecond = false
 })
 
 ops.forEach((opp) => {
     opp.addEventListener('click', ()=> {
         isSecond = true
         sign = opp.value;
+        // if (leftOperand !== undefined && rightOperand !== undefined && operator !== undefined){
+        //     res = operate(parseInt(leftOperand), operator, parseInt(rightOperand))
+        //     leftOperand = res;
+        //     ins.textContent = leftOperand
+        // }
         operator = sign;
         console.log(operator)
+        
     })
 }
 )
+
+result.addEventListener('click', () =>{
+    if (leftOperand == null || operator == null || rightOperand == null){
+        ins.textContent = leftOperand;
+    }
+    ins.textContent = ''
+    answer = operate(parseInt(leftOperand), operator, parseInt(rightOperand))
+    leftOperand = answer
+    rightOperand = ''
+    operator = ''
+    ins.textContent = leftOperand
+
+    console.log( leftOperand + operator +rightOperand)
+})
+
 
 
 
