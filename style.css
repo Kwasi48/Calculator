@@ -24,18 +24,18 @@ button{
     gap: 36px;
     margin: 36px;
     border: 2px solid black;
-    border-radius: 8px;
+    border-radius: 16px;
 }
 
 .text {
     display: flex;
     height: 100px;
-    background-color: aqua;
-    border: 1px solid black;
-    border-radius: 8px;
-    fill: 1;
+    background-color: white;
+    /* border: 1px solid black; */
+    border-radius: 16px;
+    fill: 0;
     margin: 8px;
-    align-items:flex-end;
+    align-items:center;
     flex-direction: column;
      
 
@@ -45,7 +45,7 @@ button{
     display: flex;
     width: 150px;
     height: 100px;
-    border-radius: 4px;
+    border-radius: 16px;
     background-color: white;
     border: 1px solid black;
     color:black;
@@ -53,7 +53,12 @@ button{
     overflow: hidden;
     align-items: flex-end;
     justify-content: flex-end;
+    padding: 8px;
 }
+
+.nums, .op, .clear, .result {
+    border-radius: 16px;
+} 
 
 
 
