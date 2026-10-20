@@ -79,6 +79,12 @@ btn_cl.addEventListener('click', ()=>{
 
 ops.forEach((opp) => {
     opp.addEventListener('click', ()=> {
+        if (leftOperand !== '' && rightOperand !== '' && operator !== ''){
+            res = operate(parseInt(leftOperand), operator, parseInt(rightOperand))
+            leftOperand = res;
+            ins.textContent = leftOperand
+            rightOperand = ''
+        }
         isSecond = true
         sign = opp.value;
         operator = sign;
@@ -107,7 +113,7 @@ result.addEventListener('click', () =>{
 
 
 
-
+// TODO:this is the code for the gotchas but it causes some bugs
 // if (leftOperand !== undefined && rightOperand !== undefined && operator !== undefined){
 //             res = operate(parseInt(leftOperand), operator, parseInt(rightOperand))
 //             leftOperand = res;
