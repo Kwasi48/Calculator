@@ -110,9 +110,6 @@ result.addEventListener('click', () =>{
 
 
 
-
-
-
 // TODO:this is the code for the gotchas but it causes some bugs
 // if (leftOperand !== undefined && rightOperand !== undefined && operator !== undefined){
 //             res = operate(parseInt(leftOperand), operator, parseInt(rightOperand))
